@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de notícias</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <section>
+            <!--Primeira seção da esquerda-->
+            <article>
+                <h2>Os animes da temporada de inverno 2026 estão insanos de qualidade:</h2>
+                <ul>
+                    <li>Solo Leveling S2</li>
+                    <li>Sakamoto Days</li>
+                    <li>Dandadan S2</li>
+                    <li>Jujutsu Kaisen</li>
+                    <li>Hell’s Paradise</li>
+                    <li>Fire Force</li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <div>
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/zero-ryse.webp" alt="zero-ryse">
+                <h3>Bushiroad revela projeto de basquete Zero Rise com anime de TV</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/revue-starlight.webp" alt="starlight">
+                <h3>Projeto de Shoujo Kageki Revue Starlight ganha nova sequência</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/mujinainthedeep.webp" alt="mujinainthedeep">
+                <h3>A 'Temporada 1' do mangá Mujina into the Deep entra na batalha final</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+            </div>
+
+            <hr>
+
+            <div>
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/konosuba.jpg" alt="konosuba">
+                <h3>KonoSuba - 4° temporada é confirmada e ganha visual</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/skeleton.jpg" alt="skeleton">
+                <h3>Skeleton Knight - 2º temporada ganha trailer</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/frieren.jpg" alt="frieren">
+                <h3>Sousou no Frieren - 2º temporada ganha trailer com OP</h3>
+                <ul><li>Anime Novo</li></ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <!--Segunda seção do meio-->
+            <div>
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/Kekkaishi-no-Ichirinka.jpg" alt="Kekkaishi-no-Ichirinka">
+                <h3>Mangás mais Vendidos (Dezembro 29 - Janeiro 04)</h3>
+                <ul><li>Tendência</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/arne-no-jiken.jpg" alt="arne-no-jiken">
+                <h3>Arne no Jiken-bo - Anime de Mistério sobre Vampiro Detetive ganha trailer de estreia</h3>
+                <ul><li>Tendência</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/Hiroshi Shiibashi.webp" alt="Hiroshi Shiibashi">
+                <h3>Recomendação de Hiroshi Shiibashi do Mr. Iwamoto Manga Gets TV Anime</h3>
+                <ul><li>Tendência</li></ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <!--Ultíma seção da direita-->
+            <div>
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/majo no tabitabi.jpg" alt="majo no tabitabi">
+                <h3>Sousou no Frieren - 2º temporada ganha trailer com OP</h3>
+                <ul><li>Tendência</li></ul>
+                </article>
+
+                <article>
+                <img src="./imagens_site_de_noticias/Inicio/Captura de tela 2026-01-16 195403.png" alt="crunchyroll">
+                <button> <a href="">CONFIRA</a></button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script>
+        // Carrega header e footer automaticamente
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
