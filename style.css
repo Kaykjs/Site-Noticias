@@ -9,22 +9,28 @@
     font-family: "Quantico", sans-serif;
 }
 
+main{
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 header {
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 10px;
-    gap: 130px;
+    gap: 150px;
 }
 
 nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 nav a {
@@ -39,8 +45,43 @@ nav a:hover{
 
 .icon_header{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
+
+.noticia_principal h2{
+    font-size: 45px;
+}
+
+.noticia_principal ul {
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.noticia_principal ul li {
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+main section:first-child {
+  width: 55%;
+  padding-right: 10px;
+  border-right: 1px solid black;
+}
+
+main section:nth-child(2) {
+  width: 20%;
+  padding: 0 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-child(3) {
+  width: 20%;
+  padding: 0 50px;
+}
+
+
 
 footer{
     height: 100px;
