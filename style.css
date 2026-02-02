@@ -10,6 +10,7 @@
 }
 
 main{
+    background-image: url('/imagens_site_de_noticias/imagem\ de\ fundo.jpg');
     padding: 30px 60px;
     display: flex;
 }
@@ -19,10 +20,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    padding-left: 30px;
-    padding-right: 10px;
-    gap: 150px;
+    background-color: #111;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 100px;
 }
 
 nav {
@@ -49,6 +50,11 @@ nav a:hover{
 
 .noticia_principal h2{
     font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(70deg, #1AA8EF 0%, #0F6189 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .noticia_principal ul {
@@ -62,17 +68,21 @@ nav a:hover{
 .noticia_principal li {
   font-size: 26px;
   font-weight: 600;
+  background: linear-gradient(70deg, #405AB0 0%, #1B264A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 main section:first-child {
   width: 55%;
   padding-right: 5px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 }
 
 .retangulo-noticia{
     width: 600px;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     margin-top: 30px;
     display: flex;
 }
@@ -81,14 +91,16 @@ main section:first-child {
     width: 200px;
     height: 200px;
     margin-top: 30px;
+    color: #DCD9C9;
 }
 
 .quadrado-noticia h3{
     font-size: 14px;
     font-weight:bolder;
+    margin-right: 20px;
 }
 
-.quadrado-noticia ul li::marker {
+ul li::marker {
   color: #0F6189;
 }
 
@@ -105,17 +117,21 @@ main section:first-child {
 
 main section:nth-child(2)   {
   width: 25%;
-  padding: 0 30px;
-  border-right: 1px solid black;
+  padding: 0 10px;
+  border-right: 1px solid white;
 }
 
 .retangulo-noticia2{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .quadrado-noticia2{
     width: 200px;
     height: 250px;
+    color: #DCD9C9;
 }
 
 .quadrado-noticia2 img{
@@ -125,14 +141,51 @@ main section:nth-child(2)   {
     object-fit: cover;
 }
 
+.quadrado-noticia2 ul li{
+    margin-left: 15px;
+}
+
+#hiroshi{
+    margin-top: 50px;
+}
+
 main section:nth-child(3) {
   width: 20%;
-  padding: 0 20px;   
+  padding: 0 20px;
+}
+
+.propaganda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .propaganda img{
-    width: 250px;
-    margin-top: 100px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.propaganda button {
+    background-color: #FD5F00;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 77px;
+    transition: background-color 0.3s ease;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000; 
+    box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.propaganda button:hover {
+    background-color: #eb6e20;
+}
+
+.propaganda button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
 footer{
@@ -140,11 +193,47 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #111;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
+.icon_footer{
+    display: flex;
+    gap: 10px;
+}
+
+.icon_footer img{
+    width: 40px;
+    height: 40px;
+}
+
+.links_footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px 10px;
+    align-items: center;
 }
 
 footer p{
     color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
 }
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+footer a:hover{
+    color: #9381d3;
+}
+
