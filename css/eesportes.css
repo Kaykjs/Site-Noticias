@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+main{
+    background-image: url('/imagens_site_de_noticias/imagem\ de\ fundo.jpg');
+    font-family: "Inter", sans-serif;
+}
+
+.noticia-principal {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px 30px;
+}
+
+.container-principal {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.imagem-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo-principal {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+.titulo-principal {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Grade de Notícias */
+.noticias {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.cartao-grande {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 300px;
+    clip-path: polygon(0 0, 0 50px, 50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+}
+
+.cartao-grande:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+}
+
+.imagem-cartao {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagem-cartao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cartao-grande:hover .imagem-cartao img {
+    transform: scale(1.1);
+}
+
+.sobreposicao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+    padding: 40px 25px 25px;
+    transition: all 0.3s ease;
+}
+
+.titulo-cartao {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.cartao-grande:hover .sobreposicao {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.85) 60%, transparent 100%);
+}

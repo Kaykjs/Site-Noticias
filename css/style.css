@@ -15,38 +15,6 @@ main{
     display: flex;
 }
 
-header {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding-left: 60px;
-    padding-right: 60px;
-    gap: 100px;
-}
-
-nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
-}
-
-nav a:hover{
-    color: #9381d3;
-}
-
-.icon_header{
-    display: flex;
-    gap: 10px;
-}
 
 .noticia_principal h2{
     font-size: 40px;
@@ -116,7 +84,6 @@ ul li::marker {
 }
 
 main section:nth-child(2)   {
-  width: 25%;
   padding: 0 10px;
   border-right: 1px solid white;
 }
@@ -150,7 +117,6 @@ main section:nth-child(2)   {
 }
 
 main section:nth-child(3) {
-  width: 20%;
   padding: 0 20px;
 }
 
@@ -188,52 +154,5 @@ main section:nth-child(3) {
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
-footer{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-}
 
-.icon_footer{
-    display: flex;
-    gap: 10px;
-}
-
-.icon_footer img{
-    width: 40px;
-    height: 40px;
-}
-
-.links_footer{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 5px 10px;
-    align-items: center;
-}
-
-footer p{
-    color: aliceblue;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-footer a {
-    text-decoration: none;
-    color: aliceblue;
-    transition: 0.5s;
-}
-
-footer a:hover{
-    color: #9381d3;
-}
 
