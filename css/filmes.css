@@ -124,3 +124,186 @@ main{
 .cartao-filme:hover .sobreposicao {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.85) 60%, transparent 100%);
 }
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .artigo-destaque {
+        padding: 30px 30px 50px;
+    }
+
+    .container-destaque {
+        gap: 30px;
+    }
+
+    .conteudo-destaque {
+        padding: 40px 40px 40px 0;
+    }
+
+    .titulo-destaque {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .descricao-destaque {
+        font-size: 16px;
+    }
+
+    .filmes {
+        padding: 0 30px 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .cartao-filme {
+        height: 320px;
+    }
+
+    .titulo-filme {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .artigo-destaque {
+        padding: 25px 20px 40px;
+    }
+
+    .container-destaque {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .imagem-destaque {
+        min-height: 300px;
+        order: 1;
+    }
+
+    .conteudo-destaque {
+        padding: 30px;
+        order: 2;
+    }
+
+    .titulo-destaque {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .descricao-destaque {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .filmes {
+        padding: 0 20px 40px;
+        gap: 20px;
+    }
+
+    .cartao-filme {
+        height: 300px;
+    }
+
+    .sobreposicao {
+        padding: 25px 15px 15px;
+    }
+
+    .titulo-filme {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .artigo-destaque {
+        padding: 20px 15px 30px;
+    }
+
+    .container-destaque {
+        border-radius: 12px;
+    }
+
+    .imagem-destaque {
+        min-height: 250px;
+    }
+
+    .conteudo-destaque {
+        padding: 25px 20px;
+    }
+
+    .titulo-destaque {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .descricao-destaque {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .filmes {
+        padding: 0 15px 30px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cartao-filme {
+        height: 280px;
+    }
+
+    .sobreposicao {
+        padding: 20px 15px 12px;
+    }
+
+    .titulo-filme {
+        font-size: 16px;
+    }
+
+    .cartao-filme:hover {
+        transform: none;
+    }
+
+    .cartao-filme:active {
+        transform: scale(0.98);
+    }
+
+    .cartao-filme:hover .imagem-filme img {
+        transform: none;
+    }
+
+    .cartao-filme:hover .sobreposicao {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .artigo-destaque {
+        padding: 15px 10px 25px;
+    }
+
+    .imagem-destaque {
+        min-height: 220px;
+    }
+
+    .conteudo-destaque {
+        padding: 20px 15px;
+    }
+
+    .titulo-destaque {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .descricao-destaque {
+        font-size: 13px;
+    }
+
+    .filmes {
+        padding: 0 10px 25px;
+    }
+
+    .cartao-filme {
+        height: 260px;
+    }
+
+    .titulo-filme {
+        font-size: 15px;
+    }
+}

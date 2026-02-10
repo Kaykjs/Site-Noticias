@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -111,4 +110,209 @@ main{
 
 .cartao-grande:hover .sobreposicao {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.85) 60%, transparent 100%);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+    .noticia-principal {
+        padding: 35px 35px 25px;
+    }
+
+    .container-principal {
+        height: 380px;
+    }
+
+    .conteudo-principal {
+        bottom: 35px;
+        left: 35px;
+        right: 35px;
+    }
+
+    .titulo-principal {
+        font-size: 32px;
+    }
+
+    .noticias {
+        padding: 25px 35px 55px;
+        gap: 25px;
+    }
+
+    .cartao-grande {
+        height: 280px;
+    }
+
+    .titulo-cartao {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .noticia-principal {
+        padding: 30px 30px 25px;
+    }
+
+    .container-principal {
+        height: 350px;
+    }
+
+    .conteudo-principal {
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+    }
+
+    .titulo-principal {
+        font-size: 28px;
+    }
+
+    .noticias {
+        padding: 25px 30px 50px;
+        gap: 20px;
+    }
+
+    .cartao-grande {
+        height: 260px;
+        clip-path: polygon(0 0, 0 40px, 40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+    }
+
+    .titulo-cartao {
+        font-size: 19px;
+    }
+
+    .sobreposicao {
+        padding: 30px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .noticia-principal {
+        padding: 25px 20px 20px;
+    }
+
+    .container-principal {
+        height: 300px;
+    }
+
+    .conteudo-principal {
+        bottom: 25px;
+        left: 25px;
+        right: 25px;
+    }
+
+    .titulo-principal {
+        font-size: 24px;
+    }
+
+    .noticias {
+        padding: 20px 20px 40px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cartao-grande {
+        height: 280px;
+        clip-path: polygon(0 0, 0 30px, 30px 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+    }
+
+    .titulo-cartao {
+        font-size: 18px;
+    }
+
+    .sobreposicao {
+        padding: 25px 18px 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .noticia-principal {
+        padding: 20px 15px 15px;
+    }
+
+    .container-principal {
+        height: 250px;
+    }
+
+    .conteudo-principal {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .titulo-principal {
+        font-size: 20px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .noticias {
+        padding: 15px 15px 30px;
+        gap: 15px;
+    }
+
+    .cartao-grande {
+        height: 240px;
+        clip-path: polygon(0 0, 0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    }
+
+    .titulo-cartao {
+        font-size: 17px;
+    }
+
+    .sobreposicao {
+        padding: 20px 15px 15px;
+    }
+
+    .cartao-grande:hover {
+        transform: none;
+    }
+
+    .cartao-grande:active {
+        transform: scale(0.98);
+    }
+
+    .cartao-grande:hover .imagem-cartao img {
+        transform: none;
+    }
+
+    .cartao-grande:hover .sobreposicao {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .noticia-principal {
+        padding: 15px 10px 12px;
+        border-radius: 10px;
+    }
+
+    .container-principal {
+        height: 220px;
+    }
+
+    .conteudo-principal {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    .noticias {
+        padding: 12px 10px 25px;
+        gap: 12px;
+    }
+
+    .cartao-grande {
+        height: 220px;
+        clip-path: polygon(0 0, 0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+    }
+
+    .titulo-cartao {
+        font-size: 16px;
+    }
+
+    .sobreposicao {
+        padding: 18px 12px 12px;
+    }
 }
